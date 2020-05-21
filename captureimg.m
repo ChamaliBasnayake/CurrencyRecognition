@@ -1,0 +1,10 @@
+clear;
+cam = webcam;
+cam.Resolution = '640x360';
+preview(cam);
+pause(5);
+img = snapshot(cam);
+closePreview(cam);
+imshow(img);
+savecapture(img);
+clear;
